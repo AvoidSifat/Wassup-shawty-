@@ -1,0 +1,54 @@
+
+body {
+    background-color: #fef2f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ff6384;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, font-size 0.2s;
+}
+
+#yes-btn {
+    background-color: #ffb6c1;
+}
+
+#no-btn {
+    background-color: #ffcccb;
+}
+
+#bunny-kiss {
+    display: none;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s ease-in-out;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+#bunny-kiss.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
